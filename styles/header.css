@@ -1,0 +1,41 @@
+.header {
+  background-color: black;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33px 0px;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.nav__list {
+  display:flex;
+  flex-direction: row;
+  gap: 0px 31px ;
+}
+
+.nav__link,
+.header__btn {
+  font-family: 'Graphik';
+  font-weight: 100;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.header__btn{
+  padding: 13px 45px;
+  border: 1px solid white;
+}
+
+@media(max-width:860px){
+  .nav{
+    display: none;
+  }
+}
