@@ -6,26 +6,26 @@
   <title>FigmaLand</title>
   <link rel="stylesheet" href="styles/index.css">
 </head>
-<body>
+<body style="background-color: black;">
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
-        <a class="logo" href="#">          <img class="logo__img" src="assets/images/logo.svg" alt="логотип"></a>
+        <a class="logo" href="#"><img class="logo__img" src="assets/images/logo.svg" alt="логотип"></a>
         <nav class="nav">
           <ul class="nav__list">
-            <li>
+            <li class="nav__item">
               <a class="nav__link" href="#">Home</a>
             </li>
-            <li>
+            <li class="nav__item">
               <a class="nav__link" href="#">Features</a>
             </li>
-            <li>
+            <li class="nav__item">
               <a class="nav__link" href="#">Content</a>
             </li>
-            <li>
+            <li class="nav__item">
               <a class="nav__link" href="#">Gallery</a>
             </li>
-            <li>
+            <li class="nav__item">
               <a class="nav__link" href="#">Testimonials</a>
             </li>
           </ul>
@@ -34,5 +34,32 @@
       </div>
     </div>
   </header>
+  <div class="mobile">
+    <label class="mobile__open" for="burger">
+      <svg class="mobile__burger">
+        <use href="sprytes.svg#burger"></use>
+      </svg>
+    </label>
+    <input class="mobile__input" type="checkbox" name="toggler" id="burger">
+    <nav class="mobile__nav">
+      <ul class="mobile__list">
+       <li class="mobile__item"><a class="mobile__link" href="#">Home</a>
+       </li>
+       <li class="mobile__item"><a class="mobile__link" href="#">Features</a>
+       </li>
+       <li class="mobile__item"><a class="mobile__link" href="#">Content</a>
+       </li>
+       <li class="mobile__item"><a class="mobile__link" href="#">Gallery</a>
+       </li>
+       <li class="mobile__item"><a class="mobile__link" href="#">Testimonials</a>
+       </li>  
+      </ul>
+      <label class="mobile__close" for="burger">
+        <svg class="mobile__cross" style="fill: aliceblue;">
+          <use href="sprytes.svg#cross"></use>
+        </svg>
+      </label>
+    </nav>
+  </div>
 </body>
 </html>

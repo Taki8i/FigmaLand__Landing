@@ -22,11 +22,50 @@
 
 .nav__link,
 .header__btn {
-  font-family: 'Graphik';
+  font-family: 'Graph';
   font-weight: 100;
   font-size: 1rem;
   color: white;
   text-decoration: none;
+}
+
+.nav__link{
+  position: relative;
+}
+
+.nav__link:before{
+  content: '';
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  background-color: rgb(255, 255, 255);
+  transition: all 1s;
+}
+
+.nav__link:link{
+  font-family: 'Graph';
+  font-weight: 100;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* .nav__link:visited{
+  color: red; - стилизуется с помощью JS
+} */
+
+.nav__link:hover{
+  text-shadow: 0px 0px 5px white;
+}
+
+.nav__link:hover::before{
+  width: 100%;
+}
+
+.nav__link:active{
+  color: blue;
 }
 
 .header__btn{
@@ -34,8 +73,18 @@
   border: 1px solid white;
 }
 
+.header__btn:focus{
+  box-shadow: 0 0 10px 5px white;
+}
+
 @media(max-width:860px){
   .nav{
     display: none;
+  }
+
+  .header__btn{
+    display: block;
+    margin-right: 70px;
+    flex-shrink: 2;
   }
 }
