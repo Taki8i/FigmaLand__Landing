@@ -6,7 +6,7 @@
   <title>FigmaLand</title>
   <link rel="stylesheet" href="styles/index.css">
 </head>
-<body style="background-color: black;">
+<body>
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
@@ -30,13 +30,13 @@
             </li>
           </ul>
         </nav>
-        <a class="header__btn" href="#">Login</a>
+        <button class="header__btn" href="#">Login</button>
       </div>
     </div>
   </header>
   <div class="mobile">
-    <label class="mobile__open" for="burger">
-      <svg class="mobile__burger">
+    <label class="mobile__open" for="burger" aria-label="Открыть меню">
+      <svg class="mobile__burger" aria-hidden="true">
         <use href="sprytes.svg#burger"></use>
       </svg>
     </label>
@@ -54,12 +54,27 @@
        <li class="mobile__item"><a class="mobile__link" href="#">Testimonials</a>
        </li>  
       </ul>
-      <label class="mobile__close" for="burger">
-        <svg class="mobile__cross" style="fill: aliceblue;">
+      <label class="mobile__close" for="burger" aria-label="Закрыть меню">
+        <svg class="mobile__cross" aria-hidden="true">
           <use href="sprytes.svg#cross"></use>
         </svg>
       </label>
     </nav>
   </div>
+  <main class="main">
+    <section class="home">
+      <div class="container">
+        <div class="home__wrapper">
+          <h1 id="home__title">Work at the speed of thought</h1>
+          <p class="home__text">Most calendars are designed for teams. Slate is designed for 
+            freelancers who want a simple way to plan their schedule.</p>
+          <div class="home__buttons">
+            <button class="home__btn">Try For Free</button>
+            <button class="home__btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

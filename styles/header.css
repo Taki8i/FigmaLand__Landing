@@ -1,5 +1,6 @@
 .header {
   background-color: black;
+  margin-bottom: 35px;
 }
 
 .header__wrapper {
@@ -68,9 +69,19 @@
   color: blue;
 }
 
+
 .header__btn{
   padding: 13px 45px;
   border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.header__btn:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 10px 10px #ffffff ;
 }
 
 .header__btn:focus{
@@ -78,6 +89,11 @@
 }
 
 @media(max-width:860px){
+
+  .logo{
+    flex-shrink: 2;
+  }
+
   .nav{
     display: none;
   }
@@ -85,6 +101,12 @@
   .header__btn{
     display: block;
     margin-right: 70px;
-    flex-shrink: 2;
+    padding: 13px 20px;
+  }
+
+  .header__btn:hover{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px 0px transparent ;
   }
 }
