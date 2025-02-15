@@ -1,0 +1,132 @@
+.features {
+  margin: 0 0 162px;
+}
+
+.features__wrapper {
+  font-family: 'Graph';
+  color: white;
+  text-align: center;
+}
+
+.features__title {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 119%;
+  margin: 0 0 27px;
+}
+
+.features__descr {
+  display: inline-block;
+  width: 602px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  margin: 0 0 80px  ;
+}
+
+.features__content {
+  display: flex;
+  gap: 0px 45px ;
+  padding-bottom: 1000px;
+}
+
+.features__images {
+  position: relative;
+  background: url('../assets/images/features-img.webp') no-repeat center center / contain;
+  width: 100%;
+  height: 700px;
+  min-height: 50vh;
+  position: relative;
+}
+
+.features__images:hover .features__images-img{
+  opacity: 0;
+}
+
+.features__images-img{
+  position: absolute;
+  top: 440px;
+  left: 400px;
+  transition: all 0.5s;
+}
+
+.features__list {
+ max-width: 260px;
+ align-self: center;
+}
+
+.features__list-item {
+  text-align: left ;
+  margin: 0 0 35px;
+}
+
+.features__list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  max-width: 150px;
+  margin: 0 0 10px 45px;
+  position: relative;
+}
+
+.features__list-title svg{
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  left: -45px;
+}
+
+.features__list-title .features__infinity{
+  top: -12px;
+}
+
+.features__list-text {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@media(max-width:1110px){
+
+  .features__descr{
+    width: auto;
+    margin: 0;
+  }
+
+  .features__content{
+    flex-direction: column;
+    gap: 170px 0px ;
+    
+  }
+
+  .features__images:hover .features__images-img{
+    opacity: unset;
+  }
+
+  .features__images{
+    width: 100%;
+  }
+
+  .features__images-img {
+    top: clamp(65%, 40vw, 89%);
+    left: 50%;
+    width: clamp(30%, 50vw, 60%);
+    height: auto;
+    transform: translate(-50%, 0%);
+  }
+}
+
+@media(max-width:670px){
+  .features__content{
+    gap: 0;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+
+  .features__images {
+    background-image: url("../assets/images/features-img-2dpp.webp");
+  } 
+}

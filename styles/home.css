@@ -2,6 +2,7 @@
   padding-bottom: 1028px;
   background: url('../assets/images/home-bg.webp') no-repeat 50% 90%;
   position: relative;
+  margin: 0 0 100px;
 }
 
 .home::before{
@@ -115,7 +116,10 @@
 @media(max-width:550px){
 
   .home{
-    padding-bottom: 510px;
+    padding: 0 0 510px 0;
+    background-size: 167%;
+    background-repeat: no-repeat;
+    background-position: 49% 105%;
   }
 
   .home::before{
