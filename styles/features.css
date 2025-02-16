@@ -1,5 +1,5 @@
 .features {
-  margin: 0 0 162px;
+  margin: 0 0 200px;
 }
 
 .features__wrapper {
@@ -28,7 +28,6 @@
 .features__content {
   display: flex;
   gap: 0px 45px ;
-  padding-bottom: 1000px;
 }
 
 .features__images {
