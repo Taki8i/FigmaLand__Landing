@@ -91,30 +91,29 @@
 }
 
 @media(min-resolution: 2dppx){
-
   .home{
     background: url('../assets/images/home-bg2dpp.webp') no-repeat 0% 77% / 100%  ; 
   }
 }
 
-@media(max-width:860px){
-  .home__btn:first-child:hover{
-    letter-spacing: initial;
-    background-color: #4452fe;
-    color: white; 
-    box-shadow: 0px 0px 0px 0px transparent ;
-  }
 
-  .home__btn:last-child:hover{
-    letter-spacing: initial;
-    background-color: transparent;
-    color: white; 
-    box-shadow: 0px 0px 0px 0px transparent;
-  }
-}
+@media (max-width:860px) {
+  .home__btn:first-child:hover{
+     letter-spacing: initial;
+     background-color: #4452fe;
+     color: white; 
+     box-shadow: 0px 0px 0px 0px transparent ;
+   }  
+ 
+ .home__btn:last-child:hover{
+     letter-spacing: initial;
+     background-color: transparent;
+     color: white; 
+     box-shadow: 0px 0px 0px 0px transparent;
+   } 
+ }
 
 @media(max-width:550px){
-
   .home{
     padding: 0 0 510px 0;
     background-size: 167%;
@@ -151,7 +150,6 @@
   }
 
 @media(max-width:400px) {
-
   #home__title{
     width: auto;
   }
