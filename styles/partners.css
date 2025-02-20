@@ -1,0 +1,41 @@
+.partners {
+  font-family: 'Graph';
+  color: white;
+}
+
+.partners__wrapper {
+  text-align: center;
+}
+
+.partners__title {
+font-weight: 400;
+font-size: 52px;
+line-height: 119%;
+margin: 0 0 15px;
+}
+
+.partners__description {
+  max-width: 590px;
+  margin: 0 auto 50px;
+}
+
+.partners__items {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 0px 75px;
+}
+
+.partners__link svg {
+  width: 75px;
+  height: 75px;
+}
+
+
+.partners__link .ibm{
+  width: 150px;
+}
+
+.partners__icon {
+  display: block;
+}
