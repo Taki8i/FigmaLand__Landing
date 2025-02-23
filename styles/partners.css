@@ -1,6 +1,7 @@
 .partners {
   font-family: 'Graph';
   color: white;
+  margin: 0 0 150px;
 }
 
 .partners__wrapper {
@@ -24,6 +25,7 @@ margin: 0 0 15px;
  justify-content: center;
  flex-wrap: wrap;
  gap: 0px 75px;
+ margin: 0 0 65px;
 }
 
 .partners__link svg {
@@ -31,11 +33,29 @@ margin: 0 0 15px;
   height: 75px;
 }
 
-
 .partners__link .ibm{
   width: 150px;
 }
 
-.partners__icon {
-  display: block;
+.partners__btn{
+  padding: 14px 40px;
+  border: 1px solid white;
+  font-family: 'Graph';
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
 }
+
+.partners__btn:hover{
+  background-color: white;
+  color: black;
+}
+
+@media(max-width:860px){
+  .partners__btn:hover{
+    background-color: unset;
+    color: unset;
+  }
+}
+
+
