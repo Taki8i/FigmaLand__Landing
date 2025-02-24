@@ -23,7 +23,7 @@
 }
 
 .gallery__items {
-  margin: 0 auto 45px;
+  margin: 0 auto 30px;
   max-width: 1000px;
   display: flex;
   justify-content: space-evenly;
@@ -50,8 +50,9 @@
 
 .gallery__images {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 0 0 45px;
+  gap: 0px 30px;
 }
 
 .gallery__img:nth-child(2) {

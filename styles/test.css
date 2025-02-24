@@ -82,7 +82,11 @@
   height: 200px;
 }
 
-@media(max-width:860px){
+@media(max-width:940px){
+
+  .test{
+    margin: 0 0 750px 0;
+  }
 
   .test__cards{
     gap:23px;
@@ -101,5 +105,11 @@
 
   .test__card:last-child{
     margin: 0;
+  }
+}
+
+@media(max-width:500px){
+  .test{
+    margin: 0 0 900px 0;
   }
 }
