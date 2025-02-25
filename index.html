@@ -10,8 +10,10 @@
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
-        <a class="logo" href="#"><img class="logo__img" src="assets/images/logo.svg" alt="логотип"></a>
-        <nav class="nav">
+        <a class="logo" href="#">
+          <img class="logo__img" src="assets/images/logo.svg" alt="логотип">
+        </a>
+        <nav class="nav" aria-label="Главное меню">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="#">Home</a>
@@ -30,18 +32,19 @@
             </li>
           </ul>
         </nav>
-        <button class="header__btn">Login</button>
+        <button class="header__btn" type="button">Login</button>
       </div>
     </div>
   </header>
   <div class="mobile">
     <label class="mobile__open" for="burger" aria-label="Открыть меню">
       <svg class="mobile__burger" aria-hidden="true">
+        <title> open mobile menu</title>
         <use href="sprytes.svg#burger"></use>
       </svg>
     </label>
     <input class="mobile__input" type="checkbox" name="toggler" id="burger">
-    <nav class="mobile__nav">
+    <nav class="mobile__nav" aria-label="Мобильное меню">
       <ul class="mobile__list">
        <li class="mobile__item"><a class="mobile__link" href="#">Home</a>
        </li>
@@ -84,7 +87,7 @@
           <div class="features__content">
            <div class="features__images"> 
               <img class="features__images-img" src="assets/images/features-line.webp"
-              srcset=" assets/images/features-line-2dpp.webp 2x, assets/images/features-line.webp 1x,"
+              srcset=" assets/images/features-line-2dpp.webp 2x, assets/images/features-line.webp 1x"
               sizes="(max-width: 800px) 100vw, 800px"
               alt="features line">
             </div>
@@ -162,20 +165,20 @@
           <p class="gallery__description">We focus on ergonomics and meeting you where you work. 
             It's only a keystroke away.</p>
           <div class="gallery__items">
-            <picture class="gallery__item">
-              <source media="(max-width:860px)" srcset="assets/images/gallery/grid__1-2dpp.webp" type="image/webp">
+            <picture class="gallery__item" type="image/webp">
+              <source media="(max-width:860px)" srcset="assets/images/gallery/grid__1-2dpp.webp">
               <img src="assets/images/gallery/grid__1.webp" alt="gallery image">
             </picture>
-            <picture class="gallery__item">
-              <source media="(max-width:860px)" srcset="assets/images/gallery/grid__8.webp" type="image/webp">
+            <picture class="gallery__item" type="image/webp">
+              <source media="(max-width:860px)" srcset="assets/images/gallery/grid__8.webp">
               <img src="assets/images/gallery/grid__2.webp" alt="gallery image">
             </picture>
-            <picture class="gallery__item">
-              <source media="(max-width:860px)" srcset="assets/images/gallery/grid__9.webp" type="image/webp">
+            <picture class="gallery__item" type="image/webp">
+              <source media="(max-width:860px)" srcset="assets/images/gallery/grid__9.webp">
               <img src="assets/images/gallery/grid__3.webp" alt="gallery image">
             </picture>
-            <picture class="gallery__item">
-              <source media="(max-width:860px)" srcset="assets/images/gallery/grid__10.webp" type="image/webp">
+            <picture class="gallery__item" type="image/webp">
+              <source media="(max-width:860px)" srcset="assets/images/gallery/grid__10.webp">
               <img src="assets/images/gallery/grid__4.webp" alt="gallery image">
             </picture>
           </div>
@@ -188,44 +191,44 @@
         </div>
       </div>
     </section>
-    <div class="partners">
+    <section class="partners">
       <div class="container">
         <div class="partners__wrapper">
           <h2 class="partners__title">Partners</h2>
           <p class="partners__description">We focus on ergonomics and meeting you where you work. 
             It's only a keystroke away.</p>
           <ul class="partners__items">
-            <li class="patners__item">
+            <li class="partners__item">
               <a class="partners__link" href="#"><svg class="appstore">
                 <title>appstore icon</title>
                 <use href="sprytes.svg#appstore"></use>
               </svg></a>
             </li>
-            <li class="patners__item">
+            <li class="partners__item">
               <a class="partners__link" href="#">
                 <img class="partners__icon" src="assets/images/partners.svg" alt="api company"></a>
             </li>
-            <li class="patners__item">
+            <li class="partners__item">
               <a class="partners__link" href="#"><svg class="android">
                 <title>android icon</title>
                 <use href="sprytes.svg#android"></use>
               </svg></a>
             </li>
-            <li class="patners__item">
+            <li class="partners__item">
               <a class="partners__link" href="#"><svg class="basecamp">
                 <title>basecamp icon</title>
                 <use href="sprytes.svg#basecamp"></use>
               </svg></a>
             </li>
-            <li class="patners__item">
+            <li class="partners__item">
               <a class="partners__link" href="#"><svg class="airbnb">
                 <title>airbnb</title>
                 <use href="sprytes.svg#airbnb"></use>
               </svg></a>
             </li>
-            <li class="patners__item">
+            <li class="partners__item">
               <a class="partners__link" href="#"><svg class="ibm">
-                <title></title>
+                <title>ibm</title>
                 <use href="sprytes.svg#ibm"></use>
               </svg></a>
             </li>
@@ -233,7 +236,7 @@
           <a class="partners__btn" href="#">All Partners</a>
         </div>
       </div>
-    </div>
+    </section>
     <section class="test">
       <div class="container">
         <div class="test__wrapper">
@@ -287,7 +290,7 @@
         </div>
       </div>
     </section>
-    <div class="type">
+    <section class="type">
       <div class="container">
         <div class="type__wrapper">
           <div class="type__content">
@@ -303,7 +306,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
